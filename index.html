@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>I'm a Photographer</title>
+		<!-- font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header id="header">
+			<div class="container">
+				<nav>
+					<ul>
+						<li><a href="#about">About me</a></li>
+						<li><a href="#works">My works</a></li>
+						<li><a href="#contactme">Contact Me</a></li>
+					</ul>
+				</nav>
+				<div class="header-content">
+					<h1>
+						I'm a <br /><span
+							class="typewrite"
+							data-loop="yes"
+							data-speed="100"
+							data-delay="2000"
+							data-words='["photographer", "frontend developer", "pretender"]'
+						></span>
+					</h1>
+					<h3>Cyntia Arbart</h3>
+
+					<ul class="social-links">
+						<li>
+							<a href="https://www.instagram.com/figrafka/" class="flex">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://github.com/b-pieta" class="flex">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+
+		<!-- about me section -->
+		<section class="about" id="about">
+			<div class="main">
+				<img id="profile-picture" src="images/profile.JPG">
+				<div class="about-text">
+					<h2>About Me</h2>
+					<h5>Developer <span>& Photographer</span></h5>
+					<p>Hi there! My name is Bożena, and I'm a street photographer based in Poland. I've always been fascinated by the energy and diversity of the city, and I love capturing candid moments of people going about their daily lives.</p>
+
+					<p>Please feel free to check out my website or follow me on social media. I'm always eager to connect with other passionate photographers and art lovers, so please don't hesitate to say hello!
+						</p>
+					<button type="button" id="contact">Let's Talk</button>
+				</div>
+			</section>
+
+
+		<section class="my-works" id="works">
+            <h1 id="title">My works</h1>
+			<div id="image-track" data-mouse-down-at="1" data-prev-percentage="0">
+				<!-- main section -->
+				<img class="image" id="first" src="images/img-1.jpg" draggable="false" />
+				<img class="image" src="images/img-2.jpg" draggable="false" />
+				<img class="image" src="images/img-3.jpg" draggable="false" />
+				<img class="image" src="images/img-4.jpg" draggable="false" />
+				<img class="image" src="images/img-5.jpg" draggable="false" />
+				<img class="image" src="images/img-6.jpg" draggable="false" />
+				<img class="image" src="images/img-7.jpg" draggable="false" />
+				<img class="image" src="images/img-8.jpg" draggable="false" />
+				<img class="image" src="images/img-9.jpg" draggable="false" />
+				<img class="image" src="images/img-10.jpg" draggable="false" />
+			</div>
+			</section>
+
+			<section class = "contact" id="contactme" class = "py-7">
+					<div class = "contact-content">
+						<div class = "contact-left">
+							<div class="title">
+								<h2>Contact with me</h2>
+							</div>
+							<p class = "lead"><i class = "fas fa-phone-alt"></i> +48 343 727 990</p>
+							<p class = "lead"><i class = "fas fa-envelope"></i> cyntia.arbart@gmail.com</p>
+							<form action="">
+								<input type = "text" class = "form-control" placeholder="Your name here">
+								<input type = "email" class = "form-control" placeholder="Your email here">
+								<input type = "submit" class = "btn-submit btn" value = "Submit">
+							</form>
+						</div>
+	
+						<div class = "contact-right">
+							<img src = "images/contact.JPG" alt = "contact image" id="contact-photo">
+						</div>
+					</div>
+				</div>
+			</section>
+			
+
+		</section>
+		<!-- typewriting js -->
+		<script src="typewriting-master/typewriting.js"></script>
+        <!--javascript-->
+        <script src="js/index.js"></script>
+
+	</body>
+</html>
